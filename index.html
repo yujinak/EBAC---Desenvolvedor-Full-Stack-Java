@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+    <h1>Lista de Tarefas</h1>
+    <h4>Seja bem-vindo à Lista de Tarefas!</h4>
+    <div class="instrucoes">
+      <p>Instruções de uso:
+        <ol>
+          <li>Escreva a tarefa no campo abaixo;</li>
+          <li>Clique no botão para adicionar à lista;</li>
+          <li>Quando tiver concluído uma tarefa, clique na corresponde para riscá-la da lista;</li>
+          <li>Caso tenha riscado a tarefa, clique nela <b>duas vezes</b> para desmarcar a tarefa.</li>
+        </ol>
+      </p>
+    </div>
+    <form action="">
+      <input
+        autofocus
+        required
+        type="text"
+        id="input-tarefas"
+        placeholder="'Estudar programação'"
+      />
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="lista-tarefas"></ul>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
