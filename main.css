@@ -45,10 +45,17 @@ form button {
   cursor: pointer;
 }
 ul {
-  margin: 20px 150px;
-  padding: 30px;
+  margin: 20px auto;
+  width: 60%;
+  padding: 25px;
   text-align: justify;
   background-color: lightgray;
+}
+
+ul li {
+  border-bottom: 1px solid rgb(163, 158, 253);
+  margin: 5px auto;
+  list-style: inside square;
 }
 
 .riscado {
