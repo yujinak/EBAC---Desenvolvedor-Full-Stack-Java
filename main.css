@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: lightsteelblue;
+}
+
+header p {
+  width: 70%;
+  margin: 10px auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+  font-family: "Caprasimo", cursive;
+}
+form {
+  margin: 15px auto;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 8px 5px;
+}
+
+label {
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding: 10px;
+  width: 40%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#carrossel-anuncios {
+  text-align: center;
+  margin: 100px auto;
+  color: rgb(43, 46, 226);
+  background-color: rgb(251, 158, 169);
+  padding: 60px;
+  font-size: 25px;
+}
+
+#carrossel-anuncios img {
+  height: 250px;
+}

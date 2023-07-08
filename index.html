@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <title>Formulário de Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Cadastro</h1>
+      <p>
+        Bem-vindo ao formulário de cadastro! Para cadastrar-se no nosso sistema,
+        insira os dados abaixo, seguindo os padrões de exemplo dos campos.
+      </p>
+    </header>
+    <form>
+      <label for="nome">Nome Completo:</label>
+      <input
+        autofocus
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Nome Sobrenome"
+      />
+
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="email@email.com.br"
+      />
+
+      <!-- usar jQuery Mask plugin-->
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" />
+
+      <!-- usar jQuery Mask plugin-->
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" />
+
+      <label for="endereco">Endereço:</label>
+      <input
+        type="text"
+        id="endereco"
+        name="endereco"
+        placeholder="Rua ABC, nº123, Bairro, Cidade, Estado"
+      />
+
+      <!-- usar jQuery Mask plugin-->
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" />
+
+      <button type="submit">Enviar cadastro</button>
+      <span id="msg"></span>
+    </form>
+
+    <div id="carrossel-anuncios">
+      <img
+        src="https://th.bing.com/th/id/OIP.uYwyJ3CV0JyDproknBTYYQHaD6?pid=ImgDet&rs=1"
+        alt=""
+      />
+      <h3>anuncie aqui anuncie aqui anuncie aqui anuncie aqui anuncie aqui</h3>
+      <h3>anuncie aqui anuncie aqui anuncie aqui anuncie aqui anuncie aqui</h3>
+      <h3>anuncie aqui anuncie aqui anuncie aqui anuncie aqui anuncie aqui</h3>
+    </div>
+
+    <script src="./code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./jquery.mask.min.js"></script>
+    <script src="./jquery.validate.min.js"></script>
+    <script src="/messages_pt_BR.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
