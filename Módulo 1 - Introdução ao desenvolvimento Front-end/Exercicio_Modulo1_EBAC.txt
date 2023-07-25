@@ -1,0 +1,5 @@
+HTML (HyperText Markup Language) é uma linguagem de marcação, que estrutura as páginas na web. O HTML5, lançado em 2014, inseriu diversos novos recursos que revolucionaram a criação de páginas web.
+
+CSS (Cascading Style Sheets) é uma linguagem de estilo, sendo responsável pela apresentação e estética das páginas na web que foram escritas em HTML ou XML. É um padrão especificado pela W3C (World Wide Web Consortium).
+
+O JavaScript é uma linguagem de programação de alto nível, que pode ser usada tanto para dentro da web quanto fora dela. Insere dinâmica aos elementos estruturados pelo HTML, podendo incluir animações, por exemplo. A padronização desta linguagem é chamada de ECMAScript, e, na versão ECMAScript6 (ES6, 2015), teve grandes mudanças que contribuiram para o desenvolvimento web, e também desde então tem sido lançada uma nova versão ano a ano.

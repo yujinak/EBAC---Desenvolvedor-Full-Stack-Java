@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal de Notícias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>EBAC News</h1>
+        <form>
+          <input type="search" placeholder="Busque no site" />
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
+      <div class="botao-menu">
+        <button type="button">Abrir menu</button>
+      </div>
+      <nav class="container">
+        <ul class="menu">
+          <li>
+            Esportes
+            <ul class="submenu">
+              <li>
+                <a href="">Futebol</a>
+              </li>
+              <li>
+                <a href="">Basquete</a>
+              </li>
+              <li>
+                <a href="">Fórmula 1</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Economia
+            <ul class="submenu">
+              <li>
+                <a href="">Bolsa de valores</a>
+              </li>
+              <li>
+                <a href="">Imposto de renda</a>
+              </li>
+              <li>
+                <a href="">Finanças Pessoais</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="clear"></div>
+      </nav>
+    </header>
+    <div class="container conteudo">
+      <main>
+        <section class="destaque">
+          <h2>Em destaque</h2>
+          <article class="noticia">
+            <a href="#">
+              <img src="http://via.placeholder.com/320x320" alt="" />
+              <h3>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                tempora consequatu
+              </h3>
+            </a>
+          </article>
+        </section>
+        <section>
+          <h2>Últimas notícias</h2>
+          <div class="noticias">
+            <article class="noticia">
+              <a href="#">
+                <img src="http://via.placeholder.com/320x320" alt="" />
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                  tempora consequatu
+                </h3>
+              </a>
+            </article>
+            <article class="noticia">
+              <a href="#">
+                <img src="http://via.placeholder.com/320x320" alt="" />
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                  tempora consequatu
+                </h3>
+              </a>
+            </article>
+            <article class="noticia">
+              <a href="#">
+                <img src="http://via.placeholder.com/320x320" alt="" />
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                  tempora consequatu
+                </h3>
+              </a>
+            </article>
+            <article class="noticia">
+              <a href="#">
+                <img src="http://via.placeholder.com/320x320" alt="" />
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                  tempora consequatu
+                </h3>
+              </a>
+            </article>
+          </div>
+        </section>
+      </main>
+      <aside>
+        <section class="novidades">
+          <h2>Novidades</h2>
+          <article class="noticia">
+            <a href="#">
+              <img src="http://via.placeholder.com/320x320" alt="" />
+              <h3>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                tempora consequatur quaerat architecto quod ratione.
+              </h3>
+            </a>
+          </article>
+          <article class="noticia">
+            <a href="#">
+              <img src="http://via.placeholder.com/320x320" alt="" />
+              <h3>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                tempora consequatur quaerat architecto quod ratione.
+              </h3>
+            </a>
+          </article>
+          <article class="noticia">
+            <a href="#">
+              <img src="http://via.placeholder.com/320x320" alt="" />
+              <h3>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                tempora consequatur quaerat architecto quod ratione.
+              </h3>
+            </a>
+          </article>
+        </section>
+      </aside>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".botao-menu button").click(function () {
+          $(".menu").slideToggle();
+        });
+      });
+    </script>
+  </body>
+
+  <!-- até aula 11.4 <style>
+      li {
+        width: 100%;
+        list-style-type: none;
+      }
+
+      li img {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1366px) {
+        li {
+          max-width: 33%;
+          float: left;
+        }
+      }
+
+      @media screen and (orientation: portrait) and (max-width: 640px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      @media print {
+        h3 {
+          color: red;
+          font-size: 60px;
+        }
+        body {
+          background-color: green;
+        }
+        img {
+          -webkit-filter: grayscale(100%);
+        }
+      }
+
+      div {
+        background-image: url(https://blogs.nasa.gov/dscovr/wp-content/uploads/sites/244/2015/02/earth-fulldisc.jpg);
+        height: 2000px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-color: red;
+        background-size: contain;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li>
+        <img
+          src="https://i0.wp.com/goula.lat/wp-content/uploads/2019/12/hamburguesa-beyond-meat-scaled-e1577396155298.jpg?fit=1600%2C1068&ssl=1"
+          alt=""
+        />
+        <h3>hamburger</h3>
+      </li>
+      <li>
+        <img
+          src="https://milrecetas.net/wp-content/uploads/2016/09/Recetas-de-comida-casera-mexicana-1.jpg"
+          alt=""
+        />
+        <h3>tacos</h3>
+      </li>
+      <li>
+        <img
+          src="https://th.bing.com/th/id/R.71b2fa1cb601d39d715b46c6bdb5bdf8?rik=wFVYXi93rN7feg&pid=ImgRaw&r=0"
+          alt=""
+        />
+        <h3>acarajé</h3>
+      </li>
+    </ul>
+    <picture>
+      <source
+        media="(max-width: 1024px)"
+        srcset="
+          http://1.bp.blogspot.com/-vjo4OjGEZzE/UQYCx28XMCI/AAAAAAAARrI/jTYi0irCFiA/s1600/London+City+Hall+Photos+and+Wallpapers+08.jpg
+        "
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          https://www.fubiz.net/wp-content/uploads/2014/01/Cities-from-above-7.jpg
+        "
+      />
+      <img
+        src="https://getinfolist.com/wp-content/uploads/2014/11/190910120101-04-shopping-cities-photos.jpg"
+        alt=""
+      />
+    </picture>
+    <div></div>
+  </body>
+</html> -->
+
+  <!-- link Altamira sobre resoluções de dispositivos (aula 3) https://www.altamira.ai/blog/common-screen-sizes-for-responsive-web-design/ -->
+</html>
