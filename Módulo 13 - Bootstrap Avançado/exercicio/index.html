@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AOC</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <h1><a href="#">AOC</a></h1>
+          <nav class="">
+            <ul nav navbar-nav nav-pills>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carousel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Atividades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block"
+                src="https://jbchost.com.br/madeinjapan/wp-content/uploads/2015/10/IMG_20151004_0003.jpg"
+                alt=""
+              />
+              <div class="carousel-caption"><h4>Ryukyu Buyo</h4></div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block"
+                src="https://sonica.jp/instruments/images/sanshin_gallery_1.jpg"
+                alt=""
+              />
+              <div class="carousel-caption"><h4>Sanshin</h4></div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block"
+                src="https://www.itseducation.asia/assets/images/article-images/2c91e_JPS_Chamber_Choir.jpg"
+                alt=""
+              />
+              <div class="carousel-caption"><h4>Coral</h4></div>
+            </div>
+            <button
+              data-bs-target=".carousel"
+              data-bs-slide="prev"
+              class="carousel-control-prev"
+              type="button"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              data-bs-target=".carousel"
+              data-bs-slide="next"
+              class="carousel-control-next"
+              type="button"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                class="active"
+                type="button"
+                data-bs-target=".carousel"
+                data-bs-slide-to="0"
+              ></button>
+              <button
+                class=""
+                type="button"
+                data-bs-target=".carousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                class=""
+                type="button"
+                data-bs-target=".carousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section id="atividades">
+      <h3 class="nome-secao">Atividades</h3>
+      <div class="container">
+        <nav class="nav">
+          <button
+            type="button"
+            data-bs-toggle="tab"
+            data-bs-target="#buyo"
+            class="nav-link btn btn-light"
+          >
+            Ryukyu Buyo
+          </button>
+          <button
+            type="button"
+            data-bs-toggle="tab"
+            data-bs-target="#sanshin"
+            class="nav-link btn btn-outline-light"
+          >
+            Sanshin
+          </button>
+          <button
+            type="button"
+            data-bs-toggle="tab"
+            data-bs-target="#coral"
+            class="nav-link btn btn-outline-light"
+          >
+            Coral
+          </button>
+        </nav>
+        <div class="tab-content">
+          <div class="tab-pane active" id="buyo">
+            <p>
+              <strong>Ryukyu Buyo</strong> é a dança tradicional de Okinawa.
+              Existem diversos grupos no Brasil e no mundo, além de várias
+              escolas de dança. Na nossa associação, estamos associados à escola
+              X, com uma aula por mês é dada pela sensei X. Nossos treinos
+              ocorrem aos sábados, horário 00:00, no local X. O valor mensal é
+              de R$111,11.
+            </p>
+          </div>
+          <div class="tab-pane" id="sanshin">
+            <p>
+              <strong>Sanshin</strong> é o principal instrumento tradicional de
+              Okinawa. Feito de couro de cobra e braço de madeira, possui 3
+              cordas. Tem raízes na cultura chinesa, e deu origem ao Shamisen
+              japonês. Existem diversos grupos no Brasil e no mundo, além de
+              várias escolas de dança. Na nossa associação, estamos associados à
+              escola X, sendo que uma aula por mês é dada pelo sensei X. Nossos
+              treinos ocorrem os sábados, horário 00:00, no local X. O valor
+              mensal é de R$111,11.
+            </p>
+          </div>
+          <div class="tab-pane" id="coral">
+            <p>
+              <strong>Coral</strong> costuma ser uma das atividades tradicionais
+              das comunidades nikkeis no Brasil, além de também existir no Japão
+              e em Okinawa. Existem diversos grupos no Brasil e no mundo, além
+              de várias escolas de dança. No grupo da nossa associação, fomos
+              criado em 2020 como um grupo independente, regido pelo sensei x.
+              X. Nossos treinos ocorrem os sábados, horário 00:00, no local X. O
+              valor mensal é de R$111,11.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
