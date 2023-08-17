@@ -12,17 +12,19 @@
     <header>
       <div class="navbar">
         <div class="container">
-          <h1><a href="#">AOC</a></h1>
+          <h1>
+            <a href="#" class="btn btn-warning">Associação AOC</a>
+          </h1>
           <nav class="">
             <ul nav navbar-nav nav-pills>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Carousel</a>
+              <li class="nav-item btn btn-outline-warning">
+                <a class="nav-link" href="#carousel">Carousel</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Atividades</a>
+              <li class="nav-item btn btn-outline-warning">
+                <a class="nav-link" href="#novidades">Novidades</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+              <li class="nav-item btn btn-outline-warning">
+                <a class="nav-link" href="#atividades">Atividades</a>
               </li>
             </ul>
           </nav>
@@ -31,7 +33,7 @@
     </header>
     <section>
       <div class="container">
-        <div class="carousel slide" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -97,12 +99,104 @@
         </div>
       </div>
     </section>
-    <section>
+
+    <section id="novidades">
+      <h3 class="nome-secao">Novidades</h3>
       <div class="container">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
+        <div id="novidades-artigos" class="row">
+          <div class="artigo col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+              <header class="card-header">Informação</header>
+              <img src="http://via.placeholder.com/150x150" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Reunião Mensal de Dezembro</h4>
+                <p>
+                  Tivemos a reunião mensal do mês de X onde contamos com um
+                  almoço no estilo mochiyori, discurso de nossa presidente e
+                  bingo. Também foi falado sobre o plano futuro da associação.
+                </p>
+                <a href="#" class="btn btn-outline-warning">Ler +</a>
+              </div>
+              <footer class="card-footer">
+                Post subido no dia <time>01/01/01 às 11:11</time>
+              </footer>
+            </article>
+          </div>
+          <div class="artigo col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+              <header class="card-header">Bolsas</header>
+              <img src="http://via.placeholder.com/150x150" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Palestra de ex-bolsistas</h4>
+                <p>
+                  No dia 00/00/0000, às 00h00, teremos palestra com os
+                  ex-bolsistas João e Maria que irão contar um pouco de sua
+                  experiência neste intercâmbio e dar dicas para futuros
+                  candidatos. Não perca!
+                </p>
+                <a href="#" class="btn btn-outline-warning">Ler +</a>
+              </div>
+              <footer class="card-footer">
+                Post subido no dia <time>01/01/01 às 11:11</time>
+              </footer>
+            </article>
+          </div>
+          <div class="artigo col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+              <header class="card-header">Cultura</header>
+              <img src="http://via.placeholder.com/150x150" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Workshop com professora de São Paulo</h4>
+                <p>
+                  Em setembro, teremos uma oficina sobre artes tradicionais com
+                  a professora Joana, que é especialista na área e virá de sua
+                  cidade SP para ensinar a possíveis interessados.
+                </p>
+                <a href="#" class="btn btn-outline-warning">Ler +</a>
+              </div>
+              <footer class="card-footer">
+                Post subido no dia <time>01/01/01 às 11:11</time>
+              </footer>
+            </article>
+          </div>
+          <div class="artigo col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+              <header class="card-header">Voluntariado</header>
+              <img src="http://via.placeholder.com/150x150" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Barraca de Sobá</h4>
+                <p>
+                  No fim deste mês, estaremos organizando o trabalho voluntário
+                  na barraca de sobá. Para isso, gostariamos de contar com sua
+                  colaboração preenchendo os dias em que poderá ajudar.
+                </p>
+                <a href="#" class="btn btn-outline-warning">Ler +</a>
+              </div>
+              <footer class="card-footer">
+                Post subido no dia <time>01/01/01 às 11:11</time>
+              </footer>
+            </article>
+          </div>
+          <div class="artigo col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+              <header class="card-header">Comemoração</header>
+              <img src="http://via.placeholder.com/150x150" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Festa de fim de ano</h4>
+                <p>
+                  Para celebrarmos mais um ano de conquistas da nossa
+                  associação, estaremos organizando uma festa de fim de ano!
+                  Interessados em fazer apresentações e discursos deverão
+                  preencher formulário abaixo, bem como a lista de adesão com
+                  mais informações.
+                </p>
+                <a href="#" class="btn btn-outline-warning">Ler +</a>
+              </div>
+              <footer class="card-footer">
+                Post subido no dia <time>01/01/01 às 11:11</time>
+              </footer>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -114,7 +208,7 @@
             type="button"
             data-bs-toggle="tab"
             data-bs-target="#buyo"
-            class="nav-link btn btn-light"
+            class="nav-link btn btn-outline-warning"
           >
             Ryukyu Buyo
           </button>
@@ -122,7 +216,7 @@
             type="button"
             data-bs-toggle="tab"
             data-bs-target="#sanshin"
-            class="nav-link btn btn-outline-light"
+            class="nav-link btn btn-outline-warning"
           >
             Sanshin
           </button>
@@ -130,7 +224,7 @@
             type="button"
             data-bs-toggle="tab"
             data-bs-target="#coral"
-            class="nav-link btn btn-outline-light"
+            class="nav-link btn btn-outline-warning"
           >
             Coral
           </button>
@@ -174,5 +268,6 @@
     </section>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
