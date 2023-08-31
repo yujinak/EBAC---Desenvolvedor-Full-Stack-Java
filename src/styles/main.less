@@ -1,7 +1,7 @@
 @import "maps.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
-@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+@breakpointTablet: ~"(max-width: 1023px)";
 
 * {
   margin: 0;
@@ -16,15 +16,15 @@ body {
   li {
     list-style: none;
   }
+}
 
-  .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 
-    @media @breakpointTablet {
-      max-width: 80%;
-    }
+  @media @breakpointTablet {
+    max-width: 80%;
   }
 
   .products {
@@ -39,66 +39,66 @@ body {
       grid-template-columns: repeat(2, 48.5%);
       column-gap: 3%;
     }
+
     @media @breakpointMobile {
       display: block;
     }
+  }
+}
 
-    &-item {
-      @media @breakpointMobile {
-        margin-bottom: 32px;
-      }
+.product-item {
+  @media @breakpointMobile {
+    margin-bottom: 32px;
+  }
 
-      img {
-        width: 100%;
-        border-radius: 16px;
-      }
+  img {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .product-button {
+    display: block;
+    background-color: #colors[corbotao];
+    color: #colors[corlink];
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+    &:hover {
+      background-color: #colors[corhover];
     }
+  }
+}
 
-    &-button {
-      display: block;
-      background-color: #colors[corbotao];
-      color: #colors[corlink];
-      text-align: center;
-      padding: 8px 0;
-      border-radius: 8px;
-      margin-top: 8px;
-      text-decoration: none;
+header {
+  background-color: #colors[corcabecalho];
+  position: sticky;
+  top: 0;
+  left: 0;
 
-      &:hover {
-        background-color: #colors[corhover];
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+
+  .menu {
+    display: flex;
+
+    li {
+      font-weight: bold;
+      margin-left: 24px;
+
+      a {
+        color: #colors[corlink];
+        text-decoration: none;
       }
     }
   }
+}
 
-  header {
-    background-color: #colors[corcabecalho];
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
-
-      .menu {
-        display: flex;
-
-        li {
-          font-weight: bold;
-          margin-left: 24px;
-
-          a {
-            color: #colors[corlink];
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-
-  section {
-    padding: 56px 0;
-  }
+section {
+  padding: 56px 0;
 }

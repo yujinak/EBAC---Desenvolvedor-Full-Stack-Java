@@ -10,17 +10,17 @@ body {
 body li {
   list-style: none;
 }
-body .container {
+.container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  body .container {
+@media (max-width: 1023px) {
+  .container {
     max-width: 80%;
   }
 }
-body .container .products {
+.container .products {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 32.66%);
@@ -28,27 +28,27 @@ body .container .products {
   row-gap: 4%;
   width: 100%;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  body .container .products {
+@media (max-width: 1023px) {
+  .container .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
 }
 @media (max-width: 767px) {
-  body .container .products {
+  .container .products {
     display: block;
   }
 }
 @media (max-width: 767px) {
-  body .container .products-item {
+  .product-item {
     margin-bottom: 32px;
   }
 }
-body .container .products-item img {
+.product-item img {
   width: 100%;
   border-radius: 16px;
 }
-body .container .products-button {
+.product-item .product-button {
   display: block;
   background-color: #44bd32;
   color: #fff;
@@ -58,32 +58,32 @@ body .container .products-button {
   margin-top: 8px;
   text-decoration: none;
 }
-body .container .products-button:hover {
+.product-item .product-button:hover {
   background-color: #4cd137;
 }
-body header {
+header {
   background-color: #182c61;
   position: sticky;
   top: 0;
   left: 0;
 }
-body header .container {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
 }
-body header .container .menu {
+header .menu {
   display: flex;
 }
-body header .container .menu li {
+header .menu li {
   font-weight: bold;
   margin-left: 24px;
 }
-body header .container .menu li a {
+header .menu li a {
   color: #fff;
   text-decoration: none;
 }
-body section {
+section {
   padding: 56px 0;
 }
