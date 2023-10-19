@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(endpoint)
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
-      //   avatar.src = json;
       nome.innerHTML = json.name;
       username.innerHTML = json.login;
       avatar.src = json.avatar_url;
@@ -29,5 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
       repositorios.innerHTML = json.public_repos;
       seguidores.innerHTML = json.followers;
       seguindo.innerHTML = json.following;
-    });
+    })
+    .catch((error) => alert(`Ocorreu o seguinte erro: \n ${error}`));
 });
